@@ -51,4 +51,37 @@ JSX = React.createElement = object = html(rendered in DOM)
 * babel: it transforms latest version of js code so that they can run in older versions of browsers also.
 and also babel transforms JSX code to react.createElement like code .
 
-babel comes along with parcel
+babel comes along with parcel.
+
+
+
+* React component
+//functional - NEW
+//class based component - OLD
+
+
+
+* react element
+const heading = (
+    <h1 id="title" key="h2"> Hello world
+    </h1>
+)
+
+* react component
+
+const heading1 = () =>{
+    return (
+        <h1 id="title" key="h2">Hello world</h1>
+    )
+}
+
+
+we can render both react component and element:
+
+root.render(heading) //rendering react element
+
+root.render(<heading1 />) //rendering react functional component
+
+Q:   component composition? component inside a component
+Q: react reconsilation key? why we need unique keys in tags of react
+
