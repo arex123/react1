@@ -1,0 +1,30 @@
+{
+  "name": "ak-react",
+  "version": "1.0.0",
+  "description": "-> whatever we write in root element in html, it will get override if we render any react element in it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arex123/react1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arex123/react1/issues"
+  },
+  "homepage": "https://github.com/arex123/react1#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserlist":[
+    "last 2 Chrome version"
+  ]
+}
