@@ -23,14 +23,15 @@ pacel auto relodes server after anything gets changed in file, because of HMR: h
 
 HMR uses file watcher algorithm which is written in c++,
 
-parcel removes console log , when we create a production build ,
+
 parcel caches while developement,(super fast build algorithm)
 it optimize images also,
 it compreses our file and even rewrite our code.
 it is compatable with older version of browsers
 It add polyfiles(?)
 Https on dev( npx parcel index.html --https),
-parcel uses consistent hashing algorithm to caches things up
+parcel uses consistent hashing algorithm to caches things up,
+tree shaking: parcel removes unwanted code
 
 * we should put .parcel-cache it in gitignore
 
@@ -39,3 +40,15 @@ to create production build : {npx parcel build index.html}
 Q: dist : it conatains minified version of code(project)
 
 Q: what is transitive dependency? A: dep. which depends upon inner more dependency
+
+
+* parcel does not remove console log, we need another plugin to remove it (babel plugin tranform runtime console)
+
+* JSX: html like code inside javscript
+
+JSX = React.createElement = object = html(rendered in DOM)
+
+* babel: it transforms latest version of js code so that they can run in older versions of browsers also.
+and also babel transforms JSX code to react.createElement like code .
+
+babel comes along with parcel
